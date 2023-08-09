@@ -42,7 +42,7 @@
           </label>
 
           <label for="phone">Phone
-          <input type="text" id="phone" name="phone" required size='20' value='' maxlength='15' required >
+          <input type="text" id="phone" name="phone" required size='20' value='' maxlength='15' pattern = "^\d{3}-\d{3}-\d{4}$" required >
           </label>
               
           <label for="address">Address
@@ -50,7 +50,7 @@
           </label>
               
           <label for="postal">ZIP/Postal Code
-          <input type="text" id="postal" name="postal" required>
+          <input type="text" id="postal" name="postal" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
           </label>
 
           <label for="country">Country *</label>
