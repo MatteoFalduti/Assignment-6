@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+  <header class = "header">
+    <img src ="Seneca-College.jpg" alt ="Header Image";>
+      <div class = "imgtxt"> By Matteo Falduti</div>
+    </header>
+
+    <nav class="navbar">
+      <li> <a href="web.html">Home</a> </li>
+      <li> <a href="interests.html">Interests</a> </li>
+      <li><a href="world.html">The World Independent Countries</a> </li>
+   </nav>
+  <div class ="content" >
+    <aside class = "left">
+      <img class = "left-ad" src="cola.jpg" alt = "left-ad">
+    </aside>
+    <main> 
+      <div class= "container">
+        <h1>Vistor's Info & Message</h1>
+          <form id="contactForm" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <label for="firstName">First Name *
+          <input type="text" id="firstName" name="firstName" required>
+          </label>
+              
+          <label for="lastName">Last Name *
+          <input type="text" id="lastName" name="lastName" required>
+          </label>
+              
+          <label for="email">Email Address *
+          <input type="text" id="email" name="email" required>
+          </label>
+
+          <label for="jobTitle">Job Title
+          <input type="text" id="jobTitle" name="jobTitle" required>
+          </label>
+
+          <label for="phone">Phone
+          <input type="text" id="phone" name="phone" required size='20' value='' maxlength='15' required >
+          </label>
+              
+          <label for="address">Address
+          <input type="text" id="address" name="address" required>
+          </label>
+              
+          <label for="postal">ZIP/Postal Code
+          <input type="text" id="postal" name="postal" required>
+          </label>
+
+          <label for="country">Country *</label>
+            <select id="country" name="country" required>
+              <option value="">Select Country</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="Mex">Mexico</option>
+              <!-- Add more countries here -->
+            </select>
+              
+          <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+              
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main >
+    <aside class = "right"> 
+      <img class = "right-ad" src="cola.jpg" alt = "right-ad"> 
+    </aside>
+    </div>
+
+    <footer class="footer">
+
+    </footer>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

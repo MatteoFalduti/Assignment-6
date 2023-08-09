@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="world.css">
+</head>
+<body>
+    <header class = "header">
+        <img src ="Seneca-College.jpg" alt ="Header Image";>
+        <div class = "imgtxt"> By Matteo Falduti</div>
+    </header> 
+    <nav class="navbar">
+        <li> <a href="web.html">Home</a> </li>
+        <li> <a href="interests.html">Interests</a> </li>
+        <li><a href="world.html">The World Independent Countries</a> </li>
+     </nav>
+    <div class ="content" >
+        <aside class = "left">
+        <img class = "left-ad" src="cola.jpg" alt = "left-ad">
+        </aside>
+
+    <main> 
+        <div class= "container">
+            <table class="main-table">
+                <!-- <thead>      
+                    <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Flag</th>
+                    <th>Coat of Arms</th>
+                    <th>Native Name</th>
+                    <th>Capital</th>
+                    <th>(Sub) Region</th>
+                    </tr>
+                </thead> -->
+                <tbody id = "members">
+                    <!-- <script> 
+                        document.addEventListener("DOMContentLoaded", function () {
+                          const countriesTable = document.getElementById("members");
+                    
+                          fetch("https://restcountries.com/v3.1/independent?status=true")
+                            .then(response => response.json())
+                            .then(data => {
+                              const countries = data;
+                              const table = document.createElement("table");
+                              const thead = document.createElement("thead");
+                              const tbody = document.createElement("tbody");
+                    
+                              const headerRow = document.createElement("tr");
+                              const headers = ["Name", "Capital", "Region", "Population"];
+                              headers.forEach(headerText => {
+                                const headerCell = document.createElement("th");
+                                headerCell.textContent = headerText;
+                                headerRow.appendChild(headerCell);
+                              });
+                    
+                              thead.appendChild(headerRow);
+                              table.appendChild(thead);
+                    
+                              countries.forEach(country => {
+                                const row = document.createElement("tr");
+                                const cellValues = [country.name.common, country.capital[0], country.region, country.population];
+                                cellValues.forEach(cellValue => {
+                                  const cell = document.createElement("td");
+                                  cell.textContent = cellValue;
+                                  row.appendChild(cell);
+                                });
+                                tbody.appendChild(row);
+                              });
+                    
+                              table.appendChild(tbody);
+                              countriesTable.appendChild(table);
+                            })
+                            .catch(error => {
+                              console.error("Error fetching data:", error);
+                            });
+                        });</script> -->   
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <aside class = "right">
+        <img class = "right-ad" src="cola.jpg" alt = "right-ad">
+    </aside>
+    </div>
+            
+        <footer class="footer">
+    
+        </footer>
+
+        </div>
+        <footer class="footer">
+
+        </footer>
+        <script src="world.js"></script>
+</body>
+</html>
